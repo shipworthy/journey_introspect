@@ -30,7 +30,8 @@ defmodule Introspect.GraphTest do
 
     assert introspection =~ ~r"""
              - :greeting \([A-Z0-9]+\): ✅ :success \| :compute \| rev 4
-               inputs used: 
+               started: .+ \| completed: .+ \(\d+s\)
+               inputs used:
                   :name \(rev 1\)
                   :email_address \(rev 2\)\
            """
